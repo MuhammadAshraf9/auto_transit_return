@@ -1,47 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Auto Transit Return on No Backorder</title>
+</head>
+
+<body>
+
+<!-- ================= COVER IMAGE ================= -->
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan">Auto Transit Return on No Backorder</h2>
-        <p class="oe_mt32">
-            Automatically creates a return transfer from Transit Location
-            back to the original source location when <strong>No Backorder</strong>
-            is selected during transfer validation.
-        </p>
+        <div class="oe_span12">
+            <img src="cover.png" style="width:100%; border-radius:8px;" alt="Auto Transit Return Cover"/>
+        </div>
     </div>
 </section>
 
+<!-- ================= TITLE ================= -->
 <section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h3>Key Features</h3>
-        <ul>
-            <li>Automatic return from Transit Location</li>
-            <li>Triggered when No Backorder is selected</li>
-            <li>Return picking created in Draft state</li>
-            <li>Original source location is preserved</li>
-            <li>Compatible with Odoo 18</li>
-        </ul>
+    <div class="oe_row oe_spaced text-center">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Auto Transit Return on No Backorder</h2>
+            <h3 class="oe_slogan">
+                Automatically return remaining quantities from Transit Location
+            </h3>
+        </div>
     </div>
 </section>
 
+<!-- ================= DESCRIPTION ================= -->
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-        <h3>Screenshots</h3>
+        <div class="oe_span12">
+            <p class="oe_mt32">
+                This module enhances Odoo stock operations by automatically creating
+                a return transfer when a user receives less quantity than expected
+                and chooses <strong>No Backorder</strong>.
+            </p>
 
-        <img src="screenshot_1.png" class="img img-fluid"/>
-        <br/><br/>
-
-        <img src="screenshot_2.png" class="img img-fluid"/>
-        <br/><br/>
-
-        <img src="screenshot_3.png" class="img img-fluid"/>
-        <br/><br/>
-
-        <img src="screenshot_4.png" class="img img-fluid"/>
-        <br/><br/>
-
-        <img src="screenshot_5.png" class="img img-fluid"/>
-        <br/><br/>
-
-        <img src="screenshot_6.png" class="img img-fluid"/>
-
+            <p>
+                Instead of leaving remaining quantities stuck in the
+                <strong>Transit Location</strong>, the system will automatically
+                generate a return transfer back to the original source location.
+            </p>
+        </div>
     </div>
 </section>
+
+<!-- ================= FEATURES ================= -->
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3>Key Features</h3>
+            <ul>
+                <li>✔ Automatically handles remaining quantities on No Backorder</li>
+                <li>✔ Prevents quantities from being stuck in Transit Location</li>
+                <li>✔ Creates automatic return picking</li>
+                <li>✔ Return picking is created in <strong>Draft</strong> state</li>
+                <li>✔ Fully compatible with Odoo 18 Community</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3>How It Works</h3>
+            <ol>
+                <li>Goods are transferred from Source Location to Transit Location</li>
+                <li>User receives the transfer in the destination location</li>
+                <li>User receives less quantity than planned</li>
+                <li>User selects <strong>No Backorder</strong></li>
+                <li>The system automatically creates a return from Transit to Source</li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SCREENSHOTS ================= -->
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12 text-center">
+            <h3>Screenshots</h3>
+        </div>
+
+        <div class="oe_span6">
+            <img src="screenshot_1.png" style="width:100%; border-radius:6px;"/>
+        </div>
+
+        <div class="oe_span6">
+            <img src="screenshot_2.png" style="width:100%; border-radius:6px;"/>
+        </div>
+
+        <div class="oe_span6 oe_mt16">
+            <img src="screenshot_3.png" style="width:100%; border-radius:6px;"/>
+        </div>
+
+        <div class="oe_span6 oe_mt16">
+            <img src="screenshot_4.png" style="width:100%; border-radius:6px;"/>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SUPPORT ================= -->
+<section class="oe_container">
+    <div class="oe_row oe_spaced text-center">
+        <div class="oe_span12">
+            <h3>Support</h3>
+            <p>
+                For support or customization requests, please contact the author
+                via Odoo Apps or GitHub.
+            </p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
