@@ -2,42 +2,47 @@
     <div class="oe_row oe_spaced">
 
         <style>
-            .tabs {
+            .odoo-tabs {
                 display: flex;
                 gap: 20px;
-                margin-bottom: 20px;
                 border-bottom: 2px solid #ddd;
+                margin-bottom: 20px;
             }
-            .tabs a {
-                padding: 10px 15px;
+
+            .odoo-tabs a {
                 text-decoration: none;
-                font-weight: bold;
-                color: #555;
+                padding: 10px 15px;
+                font-weight: 600;
+                color: #666;
                 border-bottom: 3px solid transparent;
             }
-            .tabs a:target,
-            .tabs a.active {
+
+            .odoo-tabs a:hover {
                 color: #875A7B;
-                border-bottom-color: #875A7B;
             }
+
             .tab-content {
                 display: none;
             }
-            .tab-content:target {
+
+            #features:target,
+            #screenshots:target {
                 display: block;
             }
+
+            /* Default tab */
             .tab-content.default {
                 display: block;
             }
         </style>
 
-        <!-- Tabs -->
-        <div class="tabs">
-            <a href="#features" class="active">Key Features</a>
+        <!-- Tabs Header -->
+        <div class="odoo-tabs">
+            <a href="#features">Key Features</a>
             <a href="#screenshots">Screenshots</a>
         </div>
 
-        <!-- Features -->
+        <!-- Key Features -->
         <div id="features" class="tab-content default">
             <h3>Key Features</h3>
             <ul>
