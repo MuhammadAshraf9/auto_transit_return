@@ -1,17 +1,17 @@
 <section class="oe_container">
-    <div class="oe_row oe_spaced oe_centered">
+    <div class="oe_row oe_spaced">
 
         <!-- TABS -->
-        <div class="oe_span12">
-            <a href="#features" class="oe_button oe_inline">Key Features</a>
-            <a href="#screens" class="oe_button oe_inline">Screenshots</a>
+        <div class="oe_span12 tabs">
+            <a href="#features" class="tab-btn">Key Features</a>
+            <a href="#screens" class="tab-btn">Screenshots</a>
         </div>
 
     </div>
 </section>
 
 <!-- FEATURES -->
-<section id="features" class="oe_container tab_content">
+<section id="features" class="oe_container tab-content">
     <div class="oe_row oe_spaced">
         <div class="oe_span12">
             <h3>Key Features</h3>
@@ -27,7 +27,7 @@
 </section>
 
 <!-- SCREENSHOTS -->
-<section id="screens" class="oe_container tab_content">
+<section id="screens" class="oe_container tab-content">
     <div class="oe_row oe_spaced">
         <div class="oe_span12">
             <h3>Screenshots</h3>
@@ -36,14 +36,29 @@
             <img src="screenshot_2.png" class="img img-responsive oe_mb16"/>
             <img src="screenshot_3.png" class="img img-responsive oe_mb16"/>
             <img src="screenshot_4.png" class="img img-responsive oe_mb16"/>
-
         </div>
     </div>
 </section>
 
 <style>
-/* hide all tabs */
-.tab_content {
+/* buttons */
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #21b799;
+    color: #fff !important;
+    text-decoration: none;
+    margin-right: 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* hide all content by default */
+.tab-content {
     display: none;
 }
 
@@ -52,13 +67,23 @@
     display: block;
 }
 
-/* show clicked tab */
-.tab_content:target {
+/* when screenshots is targeted */
+#screens:target {
     display: block;
 }
 
-/* hide features when screenshots is active */
+/* hide features when screenshots active */
 #screens:target ~ #features {
+    display: none;
+}
+
+/* when features is targeted */
+#features:target {
+    display: block;
+}
+
+/* hide screenshots when features active */
+#features:target ~ #screens {
     display: none;
 }
 </style>
