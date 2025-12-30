@@ -1,17 +1,18 @@
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-
-        <!-- TABS -->
-        <div class="oe_span12 tabs">
-            <a href="#features" class="tab-btn">Key Features</a>
-            <a href="#screens" class="tab-btn">Screenshots</a>
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Auto Transit Return on No Backorder</h2>
+            <p class="oe_mt32">
+                This module automatically creates a return transfer from the
+                <strong>Transit Location</strong> back to the original source
+                location when the user selects
+                <strong>No Backorder</strong> during partial transfer validation.
+            </p>
         </div>
-
     </div>
 </section>
 
-<!-- FEATURES -->
-<section id="features" class="oe_container tab-content">
+<section class="oe_container">
     <div class="oe_row oe_spaced">
         <div class="oe_span12">
             <h3>Key Features</h3>
@@ -26,8 +27,7 @@
     </div>
 </section>
 
-<!-- SCREENSHOTS -->
-<section id="screens" class="oe_container tab-content">
+<section class="oe_container">
     <div class="oe_row oe_spaced">
         <div class="oe_span12">
             <h3>Screenshots</h3>
@@ -36,54 +36,9 @@
             <img src="screenshot_2.png" class="img img-responsive oe_mb16"/>
             <img src="screenshot_3.png" class="img img-responsive oe_mb16"/>
             <img src="screenshot_4.png" class="img img-responsive oe_mb16"/>
+            <img src="screenshot_5.png" class="img img-responsive oe_mb16"/>
+            <img src="screenshot_6.png" class="img img-responsive oe_mb16"/>
+
         </div>
     </div>
 </section>
-
-<style>
-/* buttons */
-.tabs {
-    margin-bottom: 20px;
-}
-
-.tab-btn {
-    display: inline-block;
-    padding: 10px 18px;
-    background: #21b799;
-    color: #fff !important;
-    text-decoration: none;
-    margin-right: 8px;
-    border-radius: 4px;
-    font-weight: 600;
-}
-
-/* hide all content by default */
-.tab-content {
-    display: none;
-}
-
-/* show features by default */
-#features {
-    display: block;
-}
-
-/* when screenshots is targeted */
-#screens:target {
-    display: block;
-}
-
-/* hide features when screenshots active */
-#screens:target ~ #features {
-    display: none;
-}
-
-/* when features is targeted */
-#features:target {
-    display: block;
-}
-
-/* hide screenshots when features active */
-#features:target ~ #screens {
-    display: none;
-}
-</style>
