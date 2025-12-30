@@ -1,8 +1,19 @@
 <section class="oe_container">
-    <div class="oe_row oe_spaced">
+    <div class="oe_row oe_spaced oe_centered">
 
-        <!-- LEFT: FEATURES -->
-        <div class="oe_span6">
+        <!-- TABS -->
+        <div class="oe_span12">
+            <a href="#features" class="oe_button oe_inline">Key Features</a>
+            <a href="#screens" class="oe_button oe_inline">Screenshots</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="oe_container tab_content">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
             <h3>Key Features</h3>
             <ul>
                 <li>Automatic return from Transit Location</li>
@@ -12,26 +23,42 @@
                 <li>Compatible with Odoo 18</li>
             </ul>
         </div>
+    </div>
+</section>
 
-        <!-- RIGHT: SCREENSHOTS -->
-        <div class="oe_span6">
+<!-- SCREENSHOTS -->
+<section id="screens" class="oe_container tab_content">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
             <h3>Screenshots</h3>
 
             <img src="screenshot_1.png" class="img img-responsive oe_mb16"/>
             <img src="screenshot_2.png" class="img img-responsive oe_mb16"/>
             <img src="screenshot_3.png" class="img img-responsive oe_mb16"/>
-
-        </div>
-
-    </div>
-</section>
-
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12">
             <img src="screenshot_4.png" class="img img-responsive oe_mb16"/>
-            <img src="screenshot_5.png" class="img img-responsive oe_mb16"/>
-            <img src="screenshot_6.png" class="img img-responsive oe_mb16"/>
+
         </div>
     </div>
 </section>
+
+<style>
+/* hide all tabs */
+.tab_content {
+    display: none;
+}
+
+/* show features by default */
+#features {
+    display: block;
+}
+
+/* show clicked tab */
+.tab_content:target {
+    display: block;
+}
+
+/* hide features when screenshots is active */
+#screens:target ~ #features {
+    display: none;
+}
+</style>
