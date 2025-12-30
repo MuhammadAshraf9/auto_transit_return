@@ -2,48 +2,46 @@
     <div class="oe_row oe_spaced">
 
         <style>
-            .odoo-tabs {
+            .tabs {
                 display: flex;
                 gap: 20px;
                 border-bottom: 2px solid #ddd;
                 margin-bottom: 20px;
             }
 
-            .odoo-tabs a {
+            .tabs a {
                 text-decoration: none;
-                padding: 10px 15px;
                 font-weight: 600;
+                padding: 10px 15px;
                 color: #666;
                 border-bottom: 3px solid transparent;
             }
 
-            .odoo-tabs a:hover {
+            .tabs a:hover {
                 color: #875A7B;
             }
 
-            .tab-content {
+            .tab {
                 display: none;
             }
 
-            #features:target,
-            #screenshots:target {
+            .tab:target {
                 display: block;
             }
 
-            /* Default tab */
-            .tab-content.default {
+            .tab.default {
                 display: block;
             }
         </style>
 
-        <!-- Tabs Header -->
-        <div class="odoo-tabs">
+        <!-- Tabs -->
+        <div class="tabs">
             <a href="#features">Key Features</a>
-            <a href="#screenshots">Screenshots</a>
+            <a href="#screens">Screenshots</a>
         </div>
 
-        <!-- Key Features -->
-        <div id="features" class="tab-content default">
+        <!-- Features -->
+        <div id="features" class="tab default">
             <h3>Key Features</h3>
             <ul>
                 <li>Automatic return from Transit Location</li>
@@ -55,7 +53,7 @@
         </div>
 
         <!-- Screenshots -->
-        <div id="screenshots" class="tab-content">
+        <div id="screens" class="tab">
             <h3>Screenshots</h3>
 
             <div class="oe_row oe_spaced">
