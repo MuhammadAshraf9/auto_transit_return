@@ -1,47 +1,8 @@
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
-        <style>
-            .tabs {
-                display: flex;
-                gap: 20px;
-                border-bottom: 2px solid #ddd;
-                margin-bottom: 20px;
-            }
-
-            .tabs a {
-                text-decoration: none;
-                font-weight: 600;
-                padding: 10px 15px;
-                color: #666;
-                border-bottom: 3px solid transparent;
-            }
-
-            .tabs a:hover {
-                color: #875A7B;
-            }
-
-            .tab {
-                display: none;
-            }
-
-            .tab:target {
-                display: block;
-            }
-
-            .tab.default {
-                display: block;
-            }
-        </style>
-
-        <!-- Tabs -->
-        <div class="tabs">
-            <a href="#features">Key Features</a>
-            <a href="#screens">Screenshots</a>
-        </div>
-
-        <!-- Features -->
-        <div id="features" class="tab default">
+        <!-- LEFT: FEATURES -->
+        <div class="oe_span6">
             <h3>Key Features</h3>
             <ul>
                 <li>Automatic return from Transit Location</li>
@@ -52,34 +13,25 @@
             </ul>
         </div>
 
-        <!-- Screenshots -->
-        <div id="screens" class="tab">
+        <!-- RIGHT: SCREENSHOTS -->
+        <div class="oe_span6">
             <h3>Screenshots</h3>
 
-            <div class="oe_row oe_spaced">
-                <div class="oe_span4">
-                    <img src="screenshot_1.png" class="img img-responsive"/>
-                </div>
-                <div class="oe_span4">
-                    <img src="screenshot_2.png" class="img img-responsive"/>
-                </div>
-                <div class="oe_span4">
-                    <img src="screenshot_3.png" class="img img-responsive"/>
-                </div>
-            </div>
+            <img src="screenshot_1.png" class="img img-responsive oe_mb16"/>
+            <img src="screenshot_2.png" class="img img-responsive oe_mb16"/>
+            <img src="screenshot_3.png" class="img img-responsive oe_mb16"/>
 
-            <div class="oe_row oe_spaced">
-                <div class="oe_span4">
-                    <img src="screenshot_4.png" class="img img-responsive"/>
-                </div>
-                <div class="oe_span4">
-                    <img src="screenshot_5.png" class="img img-responsive"/>
-                </div>
-                <div class="oe_span4">
-                    <img src="screenshot_6.png" class="img img-responsive"/>
-                </div>
-            </div>
         </div>
 
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <img src="screenshot_4.png" class="img img-responsive oe_mb16"/>
+            <img src="screenshot_5.png" class="img img-responsive oe_mb16"/>
+            <img src="screenshot_6.png" class="img img-responsive oe_mb16"/>
+        </div>
     </div>
 </section>
