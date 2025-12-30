@@ -1,63 +1,82 @@
 <section class="oe_container">
     <div class="oe_row oe_spaced">
 
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="active">
-                <a href="#features" role="tab" data-toggle="tab">
-                    Key Features
-                </a>
-            </li>
-            <li>
-                <a href="#screenshots" role="tab" data-toggle="tab">
-                    Screenshots
-                </a>
-            </li>
-        </ul>
+        <style>
+            .tabs {
+                display: flex;
+                gap: 20px;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #ddd;
+            }
+            .tabs a {
+                padding: 10px 15px;
+                text-decoration: none;
+                font-weight: bold;
+                color: #555;
+                border-bottom: 3px solid transparent;
+            }
+            .tabs a:target,
+            .tabs a.active {
+                color: #875A7B;
+                border-bottom-color: #875A7B;
+            }
+            .tab-content {
+                display: none;
+            }
+            .tab-content:target {
+                display: block;
+            }
+            .tab-content.default {
+                display: block;
+            }
+        </style>
 
-        <div class="tab-content" style="margin-top:20px;">
-
-            <!-- 🔹 Key Features TAB -->
-            <div class="tab-pane active" id="features">
-                <h3>Key Features</h3>
-                <ul>
-                    <li>Automatic return from Transit Location</li>
-                    <li>Triggered when No Backorder is selected</li>
-                    <li>Return picking created in Draft state</li>
-                    <li>Original source location is preserved</li>
-                    <li>Compatible with Odoo 18</li>
-                </ul>
-            </div>
-
-            <!-- 🔹 Screenshots TAB -->
-            <div class="tab-pane" id="screenshots">
-                <h3>Screenshots</h3>
-
-                <div class="oe_row oe_spaced">
-                    <div class="oe_span4">
-                        <img src="screenshot_1.png" class="img img-responsive"/>
-                    </div>
-                    <div class="oe_span4">
-                        <img src="screenshot_2.png" class="img img-responsive"/>
-                    </div>
-                    <div class="oe_span4">
-                        <img src="screenshot_3.png" class="img img-responsive"/>
-                    </div>
-                </div>
-
-                <div class="oe_row oe_spaced">
-                    <div class="oe_span4">
-                        <img src="screenshot_4.png" class="img img-responsive"/>
-                    </div>
-                    <div class="oe_span4">
-                        <img src="screenshot_5.png" class="img img-responsive"/>
-                    </div>
-                    <div class="oe_span4">
-                        <img src="screenshot_6.png" class="img img-responsive"/>
-                    </div>
-                </div>
-
-            </div>
-
+        <!-- Tabs -->
+        <div class="tabs">
+            <a href="#features" class="active">Key Features</a>
+            <a href="#screenshots">Screenshots</a>
         </div>
+
+        <!-- Features -->
+        <div id="features" class="tab-content default">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Automatic return from Transit Location</li>
+                <li>Triggered when No Backorder is selected</li>
+                <li>Return picking created in Draft state</li>
+                <li>Original source location is preserved</li>
+                <li>Compatible with Odoo 18</li>
+            </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div id="screenshots" class="tab-content">
+            <h3>Screenshots</h3>
+
+            <div class="oe_row oe_spaced">
+                <div class="oe_span4">
+                    <img src="screenshot_1.png" class="img img-responsive"/>
+                </div>
+                <div class="oe_span4">
+                    <img src="screenshot_2.png" class="img img-responsive"/>
+                </div>
+                <div class="oe_span4">
+                    <img src="screenshot_3.png" class="img img-responsive"/>
+                </div>
+            </div>
+
+            <div class="oe_row oe_spaced">
+                <div class="oe_span4">
+                    <img src="screenshot_4.png" class="img img-responsive"/>
+                </div>
+                <div class="oe_span4">
+                    <img src="screenshot_5.png" class="img img-responsive"/>
+                </div>
+                <div class="oe_span4">
+                    <img src="screenshot_6.png" class="img img-responsive"/>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
